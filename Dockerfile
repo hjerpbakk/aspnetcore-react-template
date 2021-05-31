@@ -1,7 +1,7 @@
 FROM microsoft/dotnet:2.1.301-sdk AS builder
 WORKDIR /source
 
-RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
+RUN curl -sL https://deb.nodesource.com/setup_16.x |  bash -
 RUN apt-get install -y nodejs
 
 COPY *.csproj .
